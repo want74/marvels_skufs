@@ -33,94 +33,91 @@
         </div>
     </nav>
 
-    <main class="px-[55px] py-[24px]">
+    <main class="px-[55px] py-[24px] main">
         
-        <block class="flex bg-white gap-[10px] border-b border-slate-400 grow">
-            <!-- line -->
+        <!-- <block class="flex bg-white gap-[10px] border-b border-slate-400 grow">
             <div class="min-h-[300px] w-[8px] bg-green-500"></div>
-            <!-- Right -->
             <div class="my-auto text-center w-10/12 mx-auto">
-                <!-- Name -->
                 <h3 class="text-[16px] font-semibold">
                     Первый мститель
                 </h3>
-                <!-- Desc -->
                 <p class="text-[14px] font-base break-words my-4">
                     Классика и база супергеройки 10-х годов в марвел, короче охуенная база
                 </p>
                 <div class="flex">
-                    <!-- TG -->
-                    <a href="poshel_nah.html" class="h-[36px] ml-auto">
-                        <button class="text-[12px] h-[36px] border border-[#009EEB] rounded hover:bg-[#009EEB] hover:text-white flex px-2 py-2 gap-2">
+                    <a href="poshel_nah.html" class="h-[36px] text-[12px] ml-auto border border-[#009EEB] rounded hover:bg-[#009EEB] hover:text-white flex px-2 py-2 gap-2">
                             <img src="tg_logo.svg" class="h-2/3 mx-auto my-auto" alt="Ссылка на полный обзор">
                             Обзор
-                        </button>
                     </a>
-                    <a href="poshel_nah.html" class="mr-auto">
-                        <button class="text-[12px] border border-slate-500 py-2 px-4 rounded hover:bg-slate-500 hover:text-white">
+                    <a href="poshel_nah.html" class="mr-auto text-[12px] border border-slate-500 py-2 px-4 rounded hover:bg-slate-500 hover:text-white">
                             Оспорить
-                        </button>
                     </a>
                 </div>
             </div>
-        </block>
+        </block> -->
 
-        <block class="flex bg-white gap-[10px] border-b border-slate-400 grow">
-            <!-- line -->
-            <div class="min-h-[300px] w-[8px] bg-green-500"></div>
-            <!-- Right -->
-            <div class="my-auto text-center w-10/12 mx-auto">
-                <!-- Name -->
-                <h3 class="text-[16px] font-semibold">
-                    Росомаха начало
-                </h3>
-                <!-- Desc -->
-                <p class="text-[14px] font-base break-words my-4">
-                    Бла-бла
-                </p>
-                <div class="flex">
-                    <!-- TG -->
-                    <a href="poshel_nah.html" class="h-[36px] ml-auto">
-                        <button class="text-[12px] h-[36px] border border-[#009EEB] rounded hover:bg-[#009EEB] hover:text-white flex px-2 py-2 gap-2">
-                            <img src="tg_logo.svg" class="h-2/3 mx-auto my-auto" alt="Ссылка на полный обзор">
-                            Обзор
-                        </button>
-                    </a>
-                    <a href="poshel_nah.html" class="mr-auto">
-                        <button class="text-[12px] border border-slate-500 py-2 px-4 rounded hover:bg-slate-500 hover:text-white">
-                            Оспорить
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </block>
     </main>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script>
     function render_1(obj) {
-        const section = document.querySelector("section");
+        const main = document.querySelector("main");
         const films_nums = obj.film;
 
         for (const film_num of films_nums) {
-            const myArticle = document.createElement("article");
-            const myH2 = document.createElement("h2");
-            const myPara1 = document.createElement("p");
-            const myPara2 = document.createElement("p");
-            const myPara3 = document.createElement("p");
-            const myList = document.createElement("ul");
+            const block = document.createElement("block");
+            block.className = "flex bg-white gap-[10px] border-b border-slate-400 grow";
+            const line = document.createElement("div");
+            if (film_num.line == 1) {
+                line.className = "min-h-[300px] w-[8px] bg-green-500";
+            }else{
+                line.className = "min-h-[300px] w-[8px] bg-red-500";
+            }
 
-            myH2.textContent = film_num.name;
-            myPara1.textContent = `Secret identity: ${film_num.desc}`;
-            myPara2.textContent = `Age: ${film_num.tg}`;
-            myPara3.textContent = `Age2: ${film_num.line}`;
+            const right = document.createElement("div")
+            right.className = "my-auto text-center w-10/12 mx-auto";
 
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myList);
+            const film_name = document.createElement("h2");
+            film_name.className = "text-[16px] font-semibold";
+            const film_desc = document.createElement("p");
+            film_desc.className = "text-[14px] font-base break-words my-4";
+            const row = document.createElement("div")
+            row.className = "flex"
+            const aTg = document.createElement("a")
+            aTg.className = "h-[36px] text-[12px] ml-auto border border-[#009EEB] rounded hover:bg-[#009EEB] hover:text-white flex px-2 py-2 gap-2"
+            aTg.href = film_num.tg;
 
-            section.appendChild(myArticle);
+            const aTgBtn = document.createElement("btn");
+            aTgBtn.className = "text-[12px] h-[36px] border border-[#009EEB] rounded hover:bg-[#009EEB] hover:text-white flex px-2 py-2 gap-2"
+
+            const aTgLogo = document.createElement("img");
+            aTgLogo.src = "tg_logo.svg";
+            aTgLogo.className = "h-2/3 mx-auto my-auto";
+            aTgLogo.alt = "Ссылка на полный обзор";
+
+            const film_line = document.createElement("p");
+
+            const osporA = document.createElement("a");
+            osporA.className = "mr-auto text-[12px] border border-slate-500 py-2 px-4 rounded hover:bg-slate-500 hover:text-white"
+            osporA.href = "poshel_nah.html";
+            const osporBtn = document.createElement("btn");
+            osporBtn.className = "text-[12px] h-[36px] border border-slate-500 py-2 px-4 rounded hover:bg-slate-500 hover:text-white"
+
+            film_name.textContent = film_num.name;
+            film_desc.textContent = film_num.desc;
+            aTg.textContent = "Обзор";
+            osporA.textContent = "Оспорить";
+
+            block.appendChild(line)
+            block.appendChild(right)
+                right.appendChild(film_name);
+                right.appendChild(film_desc);
+                right.appendChild(row);
+                    row.appendChild(aTg);
+                        aTg.appendChild(aTgLogo);
+                    row.appendChild(osporA);
+                        
+
+            main.appendChild(block);
         }
     }
 
@@ -135,7 +132,7 @@
         render_1(films);
     }
 
-   
+    populate();
   </script>
 </body>
 </html>
