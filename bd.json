@@ -1,83 +1,88 @@
-
-  {
-    "film" : [
-        {
-            "name" : "Первый мститель",
-            "desc" : "Классика и база супергеройки 10-х годов в марвел, короче охуенная база",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Росомаха: начало",
-            "desc" : "Нормас фильм, но он уже устарел",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Люди икс: дни минувшего будущего",
-            "desc" : "Свежо, интересно, нелогично",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Люди икс: Первый класс",
-            "desc" : "Заебись",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Капитан марвел",
-            "desc" : "На самом деле фильм заебись, но Бри Ларсон это шлюха ебанная",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Блейд",
-            "desc" : "Довольно драйвовый фильм для того кто вышел в 98 году",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 1
-        },
-        {
-            "name" : "Блейд 2",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Блейд 3",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Человек-Паук(Сэм Рейми)",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Человек-Паук 2(Сэм Рейми)",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Человек-Паук 3(Сэм Рейми)",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Ночной оборотень",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        },
-        {
-            "name" : "Фантастическая четверка 2005 года",
-            "desc" : "",
-            "tg": "https://t.me/marvel_skufs/2",
-            "line": 0
-        }
-    ]
-  }
+{
+  "film": [
+    {
+      "name": "Первый мститель",
+      "desc": "Классика и база супергеройки 10-х годов в марвел, короче охуенная база",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Росомаха: начало",
+      "desc": "Нормас фильм, но он уже устарел",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Люди икс: дни минувшего будущего",
+      "desc": "Свежо, интересно, нелогично",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Люди икс: Первый класс",
+      "desc": "Заебись",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Капитан марвел",
+      "desc": "На самом деле фильм заебись, но Бри Ларсон это шлюха ебанная",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Блейд",
+      "desc": "Довольно драйвовый фильм для того кто вышел в 98 году",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 1
+    },
+    {
+      "name": "Блейд 2",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Блейд 3",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Человек-Паук(Сэм Рейми)",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Человек-Паук 2(Сэм Рейми)",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Человек-Паук 3(Сэм Рейми)",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Ночной оборотень",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Фантастическая четверка 2005 года",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    },
+    {
+      "name": "Блейд 12",
+      "desc": "",
+      "tg": "https://t.me/marvel_skufs/2",
+      "line": 0
+    }
+  ]
+}
